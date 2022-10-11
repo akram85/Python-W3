@@ -21,11 +21,16 @@ while(num>9):
 print(count)'''
 #reverse the digits in the given number
 # 1234 to 4321
-num = abs(int(input('enter a number ')))
-rev = num % 10  #4
-num = num // 10  #123
-while (num > 0):
-  r = num % 10  #3
-  num = num // 10  #12
+num = int(input('enter a number '))
+absNum =abs(num)
+rev = absNum % 10  #4
+absNum = absNum // 10  #123
+while (absNum > 0):
+  r = absNum % 10  #3
+  absNum = absNum // 10  #12
   rev = rev * 10 + r  #43
-print(rev)
+  
+if(num>=0):
+  print(rev)
+else:
+  print (rev - 2 * rev)
