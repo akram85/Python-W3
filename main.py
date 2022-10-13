@@ -64,12 +64,40 @@ print(d,m,y, sep ='/')'''
   #print('%d X %d = %d' % (num,i,num*i))
 #pi=22/7
 #print(f'Value of PI = {pi:.2f}')
-print('{0:5d}'.format(1))
+'''print('{0:5d}'.format(1))
 print('{0:5d}'.format(11))
 print('{0:5d}'.format(111))
 print('{0:5d}'.format(1111))
-print('{0:5d}'.format(11111))
+print('{0:5d}'.format(11111))'''
 
 # Nested loops
+'''prime numbers
+entered number 7 - 3,5 is prime'''
+'''num = int(input())
+if(num>2):
+  print(2, end =' ')
+for i in range(3,num):
+  flag =False
+  for j in range(2,i):
+    if(i%j==0):
+      flag =False
+      break
+    else:
+      flag = True
+  if(flag):
+    print(i, end =' ')'''
+
+# break ,continue ,pass
+
+for i in range(11):
+  if(i%3 == 0):
+    print(i)
+  else:
+    pass
+        
+    
+  
+  
+  
   
 
